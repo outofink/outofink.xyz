@@ -1,0 +1,192 @@
+* {margin: 0; padding: 0; outline: 0;}
+
+
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	color: #999;
+	font-size: 12px;
+	background:#bfbfbf;
+
+	
+}
+
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0 0 15px 0;
+	margin-top: 70px;
+}
+
+
+h1 {
+	font-size: 72px;
+	letter-spacing: -2px;
+	line-height: 100%;
+	text-align: center;
+}
+
+.buff {
+	font-size: 72px;
+	letter-spacing: -2px;
+	line-height: 100%;
+	text-align: center;
+	margin-top: calc(70px + 50px);
+	
+}
+
+h1.title {
+	font-size: 46px;
+	font-weight: 700;
+	color: #6a6a6a;
+
+
+}
+
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	margin: 0 0 15px 0;
+}
+
+.menuBtn {
+
+	background: center center no-repeat transparent;
+	background: #000;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+
+}
+
+.active {
+	background: #6a6a6a;
+}
+.clear {
+	clear: both;
+}
+.wrap {
+		/*background:url(../images/bg.png) top left repeat-x;*/
+		width: 100%;
+		max-width: 1920px;
+		min-width: 300px;
+		z-index: 10;
+		position: relative;
+		margin: 0 auto;
+		padding: 0;
+
+}
+
+
+
+.section {
+	width: 100%;
+	max-width: 1920px;
+	min-width: 100px;
+	z-index: 1;
+	height: 100%; /* real browsers */
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 0px 0;
+	max-height:2000px;
+
+}
+
+
+.inner {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding:30px 0;
+}
+
+
+/* This is the selector i used for my menu, it needs to be set as position:absolute; */
+.subMenu {
+	position: absolute;
+	top: -1px;
+	height: 50px;
+	z-index:9999;
+	width: 100%;
+
+	background: #000000;
+
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+}
+
+
+
+
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	width: 16%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+}
+
+.end {
+	margin: 0;
+}
+
+
+/* SECTIONS */
+.sTop {
+
+	background:#222222;
+	height: 100vh;
+	min-height: 640px;
+}
+
+
+.s1 {
+
+	background: #222222;
+}
+
+
+.s2 {
+
+	background: #323232;
+}
+
+
+.s3 {
+
+	background: #222222;
+}
+
+
+.s4 {
+
+	background: #323232;
+}
+
+.s5 {
+
+	background: #222222;
+	height: 95vh;
+}
+
