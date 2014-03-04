@@ -1,9 +1,13 @@
 $(document).ready(function(){
     $(".section").height($(window).height());
-});
-$(document).ready(function(){
     $(".s5").height($(window).height()-50);
 });
+
+$(window).resize(function() {
+  $(".section").height($(window).height());
+  $(".s5").height($(window).height()-50);
+});
+
 $("#scroller").bind('touchstart', function (ev) {
     if ($(this).scrollTop() === 0) $(this).scrollTop(1);
     var scrollTop = document.getElementById('scroller').scrollTop;
@@ -31,7 +35,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 
 	$.fn.smint = function( options ) {
-
+		last = 0
 		// adding a class to users div
 		$(this).addClass('smint')
 
@@ -58,19 +62,11 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 			// get initial top offset for the menu 
 			var stickyTop = $('.smint').offset().top;	
-
+			$('.smint').css({ 'position': 'fixed', 'top':0 }).addClass('fxd');
 			// check position and make sticky if needed
 			var stickyMenu = function(direction){
-
 				// current distance top
 				var scrollTop = $(window).scrollTop(); 
-
-				// if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-				if (scrollTop > stickyTop) { 
-					$('.smint').css({ 'position': 'fixed', 'top':0 }).addClass('fxd');	
-				} else {
-					$('.smint').css({ 'position': 'fixed', 'top':0 }).removeClass('fxd'); 
-				}   
 
 				//Check if the position is inside then change the menu
 				// Courtesy of Ryan Clarke (@clarkieryan)
@@ -88,10 +84,25 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 					}
 					$.each(optionLocs, function(i){
 						if(id != optionLocs[i][2]){
-							console.log(i);
 							$("#"+optionLocs[i][2]).removeClass("active");
 						}
 					});
+					function lol()
+       					{
+       						if (
+       							$("#"+id).html()=="Home"
+       							) {
+       								return ""
+       							}
+       							else
+       							{
+       								return $("#"+id).html()
+       							}
+       					}
+       				
+       				if (last >= 5){history.pushState(null, null, '#'+ lol())}
+       				last += 1
+
 				}
 			};
 
@@ -113,10 +124,11 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Check if at bottom of page, if so, add class to last <a> as sometimes the last div
 				// isnt long enough to scroll to the top of the page and trigger the active state.
 
-				if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       			$('.smint a').removeClass('active')
-       			$('.smint a').last().addClass('active')
-   }
+				if($(window).scrollTop() + $(window).height() == $(document).height()) 
+				{
+					$('.smint a').removeClass('active')
+       				$('.smint a').last().addClass('active')
+       			}  				
 			});
 
 			///////////////////////////////////////
