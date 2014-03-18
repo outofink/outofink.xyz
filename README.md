@@ -5,7 +5,7 @@
 </a>
 </div>
 
-<a name="http://www.outofinksoftware.com"/>
-## http://www.outofinksoftware.com
+<a name="http://www.outofinksoftware.com/alpha"/>
+## http://www.outofinksoftware.com/alpha
 
-The Out of Ink Software website (BETA)
+The Out of Ink Software website (ALPHA)

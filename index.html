@@ -1,118 +1,255 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
 <head>
-<title>Out of Ink Software</title>
+<style type="text/css">
+@font-face {
+    font-family: "curl";
+    src: url('_include/css/last-w.ttf') format("truetype");
+}
+</style>
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<meta name = "keywords" content = "" />
-<meta name = "description" content = "" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+<title>Out of Ink Software</title>   
 
+<meta name="description" content="Insert Your Site Description" /> 
 
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
 
-<script type="text/javascript" 	src="js/jquery.smint.js"></script>
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
 
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
 
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+<!-- Analytics -->
 <script type="text/javascript">
-	
 
-$(document).ready( function() {
-    $('.subMenu').smint({
-    	'scrollSpeed' : 800
-    });
-});
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
+<!-- End Analytics -->
 
 </head>
+
+
 <body>
 
-	<div class="wrap">
-
-	  <div class="subMenu" >
-	 	<div class="inner">
-			<a href="" onclick="history.pushState(null, null, '#');return false" id="sTop" class="subNavBtn">Home</a>
-			<a href="#About" onclick="history.pushState(null, null, '#About');return false"  id="s2" class="subNavBtn">About</a>
-			<a href="#Downloads" onclick="history.pushState(null, null, '#Downloads');return false" id="s3" class="subNavBtn">Downloads</a>
-			<a href="#Contact" onclick="history.pushState(null, null, '#Contact');return false" id="s4" class="subNavBtn">Contact</a>
-			<a href="#Donate" onclick="history.pushState(null, null, '#Donate');return false" id="s5" class="subNavBtn">Donate</a>
-		</div>
-		
-		
-				
-	</div>
-
-
-
-
-
-
-	<div id= "" class="section sTop">
-		
-		<div class="inner">
-
-			<h1 class="buff">Home</h1>
-
-		</div>
-
-	</div>
-
-	<div  id= "About" class="section s2">
-		<div class="inner">
-
-			<h1>Out of Ink Software</h1>
-
-		</div>
-
-	</div>
-
-	<div  id= "Downloads" class="section s3">
-		<div class="inner">
-
-			<h1>Downloads</h1>
-
-		</div>
-
-	</div>
-
-	<div id= "Contact" class="section s4">
-		<div class="inner">
-
-			<h1>Contact</h1>
-
-		</div>
-
-	</div>
-
-	<div id= "Donate" class="section s5">
-		<div class="inner">
-		
-			<h1>Donate</h1>
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-</form>
-
-		
-		</div>
-
-	</div>
-
-	
-
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
 </div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="big" id="out"><div class="huff" id="in">Out of Ink Software</div></div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="#home-slider" title="Out of Ink Software">Out of Ink Software</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+<!-- About Section -->
+<div id="downloads" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Downloads</h2>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Supports:<br>Windows/Mac OS X/Linux</span>
+                </div>
+                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
+            </div>
+            <h3 class="profile-name">PTEC</h3>
+            <p class="profile-description">Convert python scripts into excecutables easily! A wrapper of pyinstaller using wxpython.</p>
+            	
+            <div class="social">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Supports:<br>Windows</span>
+                </div>
+                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
+            </div>
+            <h3 class="profile-name">Jailbreak Assistant</h3>
+            <p class="profile-description">A Windows jailbreak assistant which tells you what jailbreak software to use just by plugging your iDevice in!</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <div class="span4 profile">
+            <div class="image-wrap">
+                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
+            </div>
+            <h3 class="profile-name">More coming soon!</h3>
+            <p class="profile-description"></p>
+        </div>
+        <!-- End Profile -->
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Contact</h2>
+                <h3 class="title-description">Any questions/comments/bugs? Feel free to contact us!</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+        
+        <div class="span3">
+        	<div class="contact-details">
+        		<h3>Contact Details</h3>
+                <ul>
+                    <li><a href="mailto:admin@outofinksoftware.com" target="_top">admin@outofinksoftware.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+</footer>
+<!-- End Footer -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
 </body>
 </html>
