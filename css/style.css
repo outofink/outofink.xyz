@@ -77,7 +77,6 @@ header {
 }
 
 .lg {
-	margin: 20px 0;
 	width: 640px;
 }
 
@@ -137,9 +136,9 @@ header {
 	font-size: 200px;
 	font-weight: 100;
 	margin: 0;
-	margin-right:60px;
-	width: 380px;
-	float: right;
+	margin-right:70px;
+	width: 250px;
+	float: left;
 	text-align: center;
 	height: 275px;
 	color: #7723B8;
