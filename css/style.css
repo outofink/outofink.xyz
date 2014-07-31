@@ -105,6 +105,7 @@ header {
 
 .grayed:hover {
 	text-decoration: none;
+    cursor:default;
 }
 .button:hover {
 		border: 0;
