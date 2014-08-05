@@ -50,13 +50,6 @@ header {
 	overflow: auto;
 }
 
-.vid {
-	width: 854px;
-}
-
-.inline-block {
-	display: inline-block;
-}
 
 .left {
 	float: left;
@@ -78,10 +71,6 @@ header {
 
 .lg {
 	width: 640px;
-}
-
-.accent {
-	color: #E18F32;
 }
 
 .info h1 {
