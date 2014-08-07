@@ -13,7 +13,7 @@
         $.getJSON( "https://api.github.com/repos/outofink/jailbreak-assistant/releases").done(function(data) {
             $('#ja_download').attr('href', data[0].assets[0].browser_download_url);
             $('#ja_notes').attr('href', data[0].html_url);
-            $('#ja_image').attr('src', data[0].body.substring(data[0].body.indexOf("https"), data[0].body.indexOf(".png")+4));
+            //$('#ja_image').attr('src', data[0].body.substring(data[0].body.indexOf("https"), data[0].body.indexOf(".png")+4));
             $('#ja_version').text(data[0].tag_name.replace("v", "Latest Version: "));
         });
     </script>
