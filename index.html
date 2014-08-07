@@ -8,6 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 		<meta name="Description" content="Welcome to the Out of Ink Software website, home to Jailbreak Assistant, PTEC, and many more projects!">
 		<meta name="google-site-verification" content="L77loi7g0mcoTtZ-60dWdbSP5B37j94gtbe4EKUpaoE" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $.getJSON( "https://api.github.com/repos/outofink/jailbreak-assistant/releases").done(function(data) {
+            $('#ja_download').attr('href', data[0].assets[0].browser_download_url);
+            $('#ja_notes').attr('href', data[0].html_url);
+            $('#ja_image').attr('src', data[0].body.substring(data[0].body.indexOf("https"), data[0].body.indexOf(".png")+4));
+            $('#ja_version').text(data[0].tag_name.replace("v", "Latest Version: "));
+        });
+    </script>
 	</head>
 	<body><header>
 		<img src="./img/banner.png" alt="">
@@ -19,12 +28,12 @@
 					<h1>Jailbreak Assistant</h1>
 					<p>A jailbreak assistant for Windows that tells you what jailbreak software to use just by plugging your iDevice in!</p>
 					<p>Supports iOS 6 and above.</p>
-					<p>Latest Version: 0.2-alpha</p>
-                    <a class="button" href="https://github.com/outofink/jailbreak-assistant/releases/download/v0.2-alpha/Jailbreak.Assistant.zip">Download</a>
-					<a class="button" href="https://github.com/outofink/jailbreak-assistant/releases">Release Notes</a>
+					<p id="ja_version" >Latest Version:</p>
+                    <a class="button" id="ja_download" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Download</a>
+					<a class="button" id="ja_notes" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Release Notes</a>
                     <a class="button" href="https://github.com/outofink/jailbreak-assistant">View Source</a>
 				</div>
-				<img class="right preview" src="./img/ja.png" alt="">
+				<img class="right preview" id="ja_image" src="./img/ja.png" alt="">
 			</div>
 		</div>
 		<div class="container">
