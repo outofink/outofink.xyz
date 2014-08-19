@@ -1,18 +1,11 @@
-@font-face {
-  font-family: "Segoe UI Light";
-  src: local("Segoe UI Light"), local("Segoe UI"), local("sans-serif");
-}
-
-@font-face {
-  font-family: "Segoe UI Semilight";
-  src: local("Segoe UI Semilight"), local("Segoe UI"), local("sans-serif");
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 body {
 	margin: 0;
-	font-family: "Segoe UI","HelveticaNeue-Light",sans-serif;
+	font-family: "Open Sans","HelveticaNeue-Light",sans-serif;
 	font-size: 16px;
 	text-align: justify;
+	font-weight: 400;
 }
 
 h1, a {
@@ -27,16 +20,18 @@ a:hover {
 	text-decoration: underline;
 }
 h2 {
-	font-family: "Segoe UI Light","HelveticaNeue-UltraLight",sans-serif;
+	font-family: "Open Sans","HelveticaNeue-UltraLight",sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	color:#986EB8;
 	margin-top:-25px;
+	font-weight: 300;
 }
 h1 {
-	font-family: "Segoe UI Light","HelveticaNeue-UltraLight",sans-serif;
+	font-family: "Open Sans","HelveticaNeue-UltraLight",sans-serif;
 	font-size: 32px;
 	font-weight: normal;
+	font-weight: 300;
 }
 
 header {
@@ -62,7 +57,7 @@ header {
 .info {
 	width: 400px;
 	height: 194px;
-	margin: 39px 40px;
+	margin: 10px 40px;
 }
 
 .connect {
@@ -106,7 +101,7 @@ header {
 	display: inline-block;
 	float: left;
 	width: 100%;
-	padding: 32px 0;
+	padding: 24px 0;
 }
 
 .alt {
@@ -124,7 +119,6 @@ header {
 
 .question {
 	font-size: 200px;
-	font-weight: 100;
 	margin: 0;
 	margin-left: 23px;
 	width: 250px;
@@ -132,6 +126,7 @@ header {
 	text-align: center;
 	height: 275px;
 	color: #7723B8;
+	font-weight: 400;
 }
 
 footer {
