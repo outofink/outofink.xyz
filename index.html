@@ -18,7 +18,7 @@
 					<h1>Jailbreak Assistant</h1>
 					<p>A jailbreak assistant for Windows that tells you what jailbreak software to use just by plugging your iDevice in!</p>
 					<p>Supports iOS 6 and above.</p>
-					<p id="ja_version"></p>
+					<p id="ja_version">Latest Version: 0.2-alpha</p>
                     <a class="button" id="ja_download" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Download</a>
 					<a class="button" id="ja_notes" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Release Notes</a>
                     <a class="button" href="https://github.com/outofink/jailbreak-assistant">View Source</a>
@@ -84,17 +84,4 @@
 				<p class="right">Website by Moshe, inspired by <a href="http://www.boneyardbrew.deviantart.com/">BoneyardBrew</a>.</p> 
 			</footer>
 		</div>
-	<script type="text/javascript">
-		request = new XMLHttpRequest();
-		request.open('GET', 'https://api.github.com/repos/outofink/jailbreak-assistant/releases', true);
-		request.onload = function() {
-		    if (request.status >= 200 && request.status < 400) {
-		        data = JSON.parse(request.responseText);
-		        document.getElementById("ja_download").href = data[0].assets[0].browser_download_url;
-		        document.getElementById("ja_notes").href = data[0].html_url;
-		        document.getElementById("ja_version").innerHTML = data[0].tag_name.replace("v", "Latest Version: ");
-		    }
-		};
-		request.send();
-	</script>
 </body></html>
