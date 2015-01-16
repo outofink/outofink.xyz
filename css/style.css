@@ -93,6 +93,7 @@ header {
 		border: 0;
 		text-decoration: none;
 		opacity: .85;
+		transition: opacity .25s ease-in-out;
 }
 
 .container {
