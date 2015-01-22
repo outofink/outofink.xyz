@@ -1,87 +1,379 @@
 <!DOCTYPE html>
-<html>
-<head>
-		<title>Out of Ink Software</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="shortcut icon" href="./favicon.ico">
-		 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400;300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="./css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=0.8">
-		<meta name="Description" content="Welcome to the Out of Ink Software website, home to Jailbreak Assistant, PTEC, and many more projects!">
-		<meta name="google-site-verification" content="L77loi7g0mcoTtZ-60dWdbSP5B37j94gtbe4EKUpaoE" />
-	</head>
-	<body><header>
-		<img src="./img/banner.png" alt="">
-	</header>
-		<div class="container alt">
-			<div class="wrap">
-				<div class="left info" style="height:280px">
-					<h1>Jailbreak Assistant</h1>
-					<p>A jailbreak assistant for Windows that tells you what jailbreak software to use just by plugging your iDevice in!</p>
-					<p>Supports iOS 6 and above.</p>
-					<p id="ja_version">Latest Version: 0.2-alpha</p>
-                    <a class="button" id="ja_download" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Download</a>
-					<a class="button" id="ja_notes" href="https://github.com/outofink/jailbreak-assistant/releases/latest">Release Notes</a>
-                    <a class="button" href="https://github.com/outofink/jailbreak-assistant">View Source</a>
-				</div>
-				<img class="right preview" id="ja_image" src="./img/ja.png" alt="" style="position:relative;top:27px">
-			</div>
-		</div>
-		<div class="container">
-			<div class="wrap">
-				<div class="right info" style="margin-top:90px">
-					<h1>PTEC</h1>
-					<h2>Python to Executable Converter</h2>
-					<p>A wrapper of pyinstaller using wxPython.</p>
-					<p>Latest Version: WIP</p>
-                    <a class="grayed">Download</a>
-					<a class="grayed">Release Notes</a>
-                    <a class="button" href="https://github.com/outofink/ptec">View Source</a>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
 
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Out of Ink Software</title>
+    <meta content="Welcome to the home of Jailbreak Assistant, PTEC, and many more!" name="description">
+    <meta content="outofink" name="author"><!-- Mobile Meta -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon"><!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'><!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"><!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- Plugins -->
+    <link href="css/animations.css" rel="stylesheet"><!-- Worthy core CSS file -->
+    <link href="css/style.css" rel="stylesheet"><!-- Custom css -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="no-trans">
+    <!-- scrollToTop -->
+    <!-- ================ -->
+
+    <div class="scrollToTop icon-up-open-big" style="font-style: italic"></div><!-- header start -->
+    <!-- ================ -->
+
+    <header class="header fixed clearfix navbar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- header-left start -->
+                    <!-- ================ -->
+
+                    <div class="header-left clearfix">
+                        <!-- logo -->
+
+                        <div class="logo smooth-scroll">
+                            <a href="#banner"><img alt="Out of Ink Software" id="logo" src="images/purple.png"></a>
+                        </div><!-- name-and-slogan -->
+
+                        <div class="site-name-and-slogan smooth-scroll">
+                            <div class="site-name">
+                                <a href="#banner">Out of Ink Software</a>
+                            </div>
+                        </div>
+                    </div><!-- header-left end -->
+                </div>
+
+                <div class="col-md-8">
+                    <!-- header-right start -->
+                    <!-- ================ -->
+
+                    <div class="header-right clearfix">
+                        <!-- main-navigation start -->
+                        <!-- ================ -->
+
+                        <div class="main-navigation animated">
+                            <!-- navbar start -->
+                            <!-- ================ -->
+
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <!-- Toggle get grouped for better mobile display -->
+
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" data-target="#navbar-collapse-1" data-toggle="collapse" type="button"><span class=
+                                        "sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class=
+                                        "icon-bar"></span></button>
+                                    </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+                                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active">
+                                                <a href="#banner">Home</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#ja">Jailbreak Assistant</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#ptec">PTEC</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#more">More</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav><!-- navbar end -->
+                        </div><!-- main-navigation end -->
+                    </div><!-- header-right end -->
+                </div>
+            </div>
+        </div>
+    </header><!-- header end -->
+    <!-- banner start -->
+    <!-- ================ -->
+
+    <div class="banner" id="banner">
+        <div class="banner-image"></div>
+
+        <div class="banner-caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                        <h1 class="text-center">Out of Ink <span>Software</span></h1>
+
+                        <p class="lead text-center smooth-scroll">Welcome to the home of <a href="#ja">Jailbreak Assistant</a>, <a href="#ptec">PTEC</a>, and
+                        <a href="#more">many more</a>!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- banner end -->
+    <!-- section start -->
+    <!-- ================ -->
+
+    <div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title text-center" id="ja">Jailbreak <span>Assistant</span></h1>
+
+                    <div class="space"></div>
+
+                    <div class="row">
+                        <div class="col-md-6 vcenterv border"><img alt="Jailbreak Assistant" src="images/newja.png"></div><!--
+                            --><div class="col-md-6 vcenter">
+                            <p><strong>A jailbreak assistant for Windows that tells you what jailbreak software to use simply by plugging in your iDevice!</strong></p>
+
+                            <ul class="list-unstyled">
+                                <li style="list-style: none; display: inline">
+                                    <p>Requirements:</p>
+                                </li>
+
+                                <li><i class="fa fa-caret-right pr-10 text-colored"></i> iTunes</li>
+
+                                <li><i class="fa fa-caret-right pr-10 text-colored"></i> .NET Framework 4.0</li>
+
+                                <li><i class="fa fa-caret-right pr-10 text-colored"></i> iDevice with iOS 6 or above</li>
+
+                                <li style="list-style: none; display: inline">
+                                    <div class="space-sm"></div>
+                                </li>
+
+                                <li><i class="fa fa-laptop pr-10 text-colored"></i>Supported Platforms: Windows</li>
+
+                                <li><i class="fa fa-wrench pr-10 text-colored"></i>Latest Version: 1.0</li>
+                            </ul>
+
+                            <div class="space"></div>
+
+                            <div class="text-center">
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/jailbreak-assistant/releases/download/v0.2-alpha/Jailbreak.Assistant.zip" type="button"><i class="fa fa-download pr-10"></i>Download</a> 
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/jailbreak-assistant/releases/latest" type="button"><i class="fa fa-book pr-10"></i>Release Notes</a>
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/jailbreak-assistant" type="button"><i class="fa fa-code pr-10"></i>View Source</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- section end -->
+    <!-- section start -->
+    <!-- ================ -->
+
+    <div class="section translucent-bg bg-image-1 blue">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title text-center" id="ptec">PTEC</h1>
+
+                    <p class="lead-sub text-center">Python to Executable Converter</p>
+
+                    <div class="space"></div>
+
+                    <div class="row">
+                        <div class="col-md-6 vcenter">
+                            <p><strong>A wrapper of pyinstaller using wxPython.</strong></p>
+
+                            <ul class="list-unstyled">
+                                <li style="list-style: none; display: inline">
+                                    <p>Requirements:</p>
+                                </li>
+
+                                <li><i class="fa fa-caret-right pr-10"></i> Python 2.6.x - 2.7.x</li>
+
+                                <li><i class="fa fa-caret-right pr-10"></i> pywin32 (Windows)</li>
+
+                                <li style="list-style: none; display: inline">
+                                    <div class="space-sm"></div>
+                                </li>
+
+                                <li><i class="fa fa-laptop pr-10"></i>Supported Platforms: Windows, OS X, and Linux</li>
+
+                                <li><i class="fa fa-wrench pr-10"></i>Latest Version: WIP</li>
+                            </ul>
+
+                            <div class="space"></div>
+
+                            <div class="text-center text-colored">
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/ptec" type="button"><i class="fa fa-download pr-10"></i>Download</a> 
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/ptec" type="button"><i class="fa fa-book pr-10"></i>Release Notes</a>
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/ptec" type="button"><i class="fa fa-code pr-10"></i>View Source</a>
+                            </div>
+                        </div><!--
+                            --><div class="col-md-6 vcenter border"><img alt="PTEC" src="images/ptec.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- section end -->
+
+    <div class="matrix clearfix translucent-bg bg-image-dark">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title text-center" id="more">More <span>Projects</span></h1>
+
+                    <div class="space"></div>
+
+                    <div class="row">
+                        <div class="col-md-6 vcenter border"><img alt="" src="images/bd.png"></div><!--
+                            --><div class="col-md-6 vcenter">
+                            <p><strong>blenderdownloader</strong></p>
+                            <p>A python script that downloads the newest version of Blender.</p>
+                            <div class="space-sm"></div>
+
+                            <ul class="list-unstyled">
+                                <li style="list-style: none; display: inline">
+                                    <p>Requirements:</p>
+                                </li>
+
+                                <li><i class="fa fa-caret-right pr-10"></i>Python 2.x and 3.x</li>
+
+                                <li><i class="fa fa-caret-right pr-10"></i>BeautifulSoup</li>
+
+                                <li style="list-style: none; display: inline">
+                                    <div class="space-sm"></div>
+                                </li>
+
+                                <li><i class="fa fa-laptop pr-10"></i>Supported Platforms: Windows</li>
+
+                                <li><i class="fa fa-wrench pr-10"></i>Latest Version: 1.0</li>
+                            </ul>
+
+                            <div class="space-sm"></div>
+
+                            <div class="">
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink/blenderdownloader" type="button"><i class="fa fa-code pr-10"></i>View Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- section start -->
+    <!-- ================ -->
+
+    <div class="matrix-alt clearfix translucent-bg bg-image-0">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <div class="row">
+                <div class="col-md-6 vcenter">
+                    <p><strong>twisted-pentago</strong></p>
+                    <p>An online Pentago game powered by Twisted.</p>
+                    <div class="space-sm"></div>
+
+                    <ul class="list-unstyled">
+                        <li style="list-style: none; display: inline">
+                            <p>Requirements:</p>
+                        </li>
+
+                        <li><i class="fa fa-caret-right pr-10"></i>Python 2.x</li>
+
+                        <li><i class="fa fa-caret-right pr-10"></i>Twisted</li>
+
+                        <li style="list-style: none; display: inline">
+                            <div class="space-sm"></div>
+                        </li>
+
+                        <li><i class="fa fa-laptop pr-10"></i>Supported Platforms: Windows, OS X, and Linux</li>
+
+                        <li><i class="fa fa-wrench pr-10"></i>Latest Version: 1.0</li>
+                    </ul>
+
+                    <div class="space-sm"></div>
+
+                    <div class="">
+                        <a class="btn btn-sm btn-default" href="https://github.com/outofink/twisted-pentago" type="button"><i class="fa fa-code pr-10"></i>View Source</a>
+                    </div>
+                </div><!--
+                        --><div class="col-md-6 vcenter border"><img alt="" src="images/tp.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <!-- ================ -->
+    <div class="matrix">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center">See even more of my projects!</h1>
+                        <div class="space"></div>
+                        <div class="text-center">
+                                <a class="btn btn-sm btn-default" href="https://github.com/outofink" type="button"><i class="fa fa-github pr-10"></i>My Github</a>
+                            </div>
+					</div>
 				</div>
-				<img class="left preview" src="./img/ptec.png" alt="">
 			</div>
 		</div>
-		<div class="container alt">
-			<div class="wrap">
-				<div class="left info donate" style="margin-top:30px">
-					<h1>Other GitHub Projects</h1>
-					<p>A lot of my projects either aren't fancy enough or aren't polished enough to get their own section, but keep an eye out for 
-						<a href="https://github.com/outofink/blenderdownloader">blenderdownloader</a>,
-						<a href="https://github.com/outofink/boi-item-api">boi-item-api</a>,
-						<a href="https://github.com/outofink/twisted-pentago">twisted-pentago</a>,
-						<a href="https://github.com/outofink/steam-skin-manager">steam-skin-manager</a>,
-					and more!</p>
-					<a class="button" href="https://github.com/outofink">GitHub</a>
-				</div>
-					<img class="right preview" src="./img/git.png" alt="" style="margin-right:80px; width:300px">
-			</div>
-		</div>
-		<div class="container donate">
-			<div class="wrap">
-				<div class="right donate-info">
-					<h1>Do you like my projects?</h1>
-					<p>If you like like any of my projects, please consider a small donation.</p>
-					<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PEPDTFVBL3WJ6&lc=US&item_name=Out%20of%20Ink%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted">Donate</a>
-					<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PEPDTFVBL3WJ6&lc=US&item_name=Out%20of%20Ink%20Software&item_number=COFFEE&amount=5%2e00&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedd">Buy me a cup of coffee</a>
-				</div>
-				<img class="left preview" src="./img/coffee.png" alt="" style="margin-left:50px">
-			</div>
-		</div>
-		<div class="container donate alt">
-			<div class="wrap">
-				<div class="left info lg" style="margin-top:50px">
-					<h1>Questions?</h1>
-					<p>If you have questions or comments about any of my projects, feel free to email me! If it's a bug, you can also add a "New Issue" on its GitHub page.</p>
-					<a class="button" href="mailto:admin@outofinksoftware.com">Email me</a>
-				</div>
-				<p class="question">?</p>
-			</div>
-		</div>
-		<div class="wrap">
-			<footer>
-				<p class="left">© 2014 Out of Ink Software</p>
-				<p class="right">Website by Moshe, inspired by <a href="http://www.boneyardbrew.deviantart.com/">BoneyardBrew</a>.</p> 
-			</footer>
-		</div>
-</body></html>
+    <footer id="footer">
+        <!-- .footer start -->
+        <!-- ================ -->
+
+        <div class="footer section">
+            <div class="container">
+                <h1 class="title text-center" id="contact">Contact Me</h1>
+
+                <div class="space"></div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-content text-center">
+                            <p class="large">If you have questions or comments about any of my projects, feel free to email me!</p>
+
+                            <ul class="list-icons">
+                                <li>
+                                    <i class="fa fa-envelope-o pr-10"></i><a href="mailto:admin@outofinksoftware.com">admin@outofinksoftware.com</a>
+                                </li>
+                            </ul>
+
+                            <p class="large">If you like like any of my projects, please consider a small donation!</p><a class="btn btn-sm btn-default" href=
+                            "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PEPDTFVBL3WJ6&lc=US&item_name=Out%20of%20Ink%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"
+                            target="_blank" type="button"><i class="fa fa-usd pr-10"></i>Donate</a> <a class="btn btn-sm btn-default" href=
+                            "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PEPDTFVBL3WJ6&lc=US&item_name=Out%20of%20Ink%20Software&item_number=COFFEE&amount=5%2e00&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedd"
+                            target="_blank" type="button"><i class="fa fa-coffee pr-10"></i>Buy me coffee</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .footer end -->
+        <!-- .subfooter start -->
+        <!-- ================ -->
+
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Copyright © 2015 by <a href="http://outofinksoftware.com">outofink</a>, based on Worthy by <a href=
+                        "http://htmlcoder.me" target="_blank">HtmlCoder</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .subfooter end -->
+    </footer><!-- footer end -->
+    <!-- JavaScript files placed at the end of the document so the pages load faster
+        ================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script src="plugins/jquery.min.js" type="text/javascript"></script> <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script> <!-- Modernizr javascript -->
+     <script src="plugins/modernizr.js" type="text/javascript"></script> <!-- Isotope javascript -->
+<!--     <script src="plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>  Backstretch javascript -->
+     <script src="plugins/jquery.backstretch.min.js" type="text/javascript"></script> <!-- Appear javascript -->
+     <script src="plugins/jquery.appear.js" type="text/javascript"></script> <!-- Initialization of Plugins -->
+     <script src="js/template.js" type="text/javascript"></script> <!-- Custom Scripts -->
+     <script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

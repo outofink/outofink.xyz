@@ -1,0 +1,5 @@
+"About Me" Section
+ptec image to new style
+optimize images for web
+better program descriptions
+general cleanup
