@@ -338,7 +338,7 @@ blockquote {
 	padding: 8px 15px;
 	font-size: 14px;
 	line-height: 1.42857143;
-	min-width: 160px;
+	min-width: 130px;
 	text-align: center;
 	border-radius: 0;
 	text-transform: uppercase;
@@ -606,6 +606,10 @@ textarea {
     .site-name {
         font-size:20px;
     }
+    .tiny {
+        font-size: 10px;
+    }
+
 }
 .site-name a {
 	color: #ffffff;

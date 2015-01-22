@@ -2,3 +2,6 @@
 ptec image to new style
 better program descriptions
 general cleanup
+
+support for width of 1200px or below
+    banner
