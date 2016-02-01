@@ -148,9 +148,17 @@ blockquote {
 }
 .banner-caption {
 	position: absolute;
+	top: 30%;
+	width: 100%;
+	z-index: 2;
+}
+@media (min-width: 768px) {
+	.banner-caption {
+	position: absolute;
 	top: 40%;
 	width: 100%;
 	z-index: 2;
+	}
 }
 .subfooter {
 	background-color: #fafafa;
